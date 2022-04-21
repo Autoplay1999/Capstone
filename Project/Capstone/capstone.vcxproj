@@ -156,6 +156,10 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(SolutionDir)capstone\include\capstone" "$(SolutionDir)Binary\Include\capstone" /I /Y /Q
+PowerShell -Command "$content = \"\"; foreach($line in Get-Content \"$(SolutionDir)capstone\include\capstone\capstone.h\") { $content += $line + \"`n\"; if ($line -match \"#define CAPSTONE_ENGINE_H\") { $content += \"`n#ifndef CAPSTONE_EXPORTS`n#`tifdef _WIN64`n#`t`tifdef _DEBUG`n#`t`t`tpragma comment(lib, `\"$(ProjectName)64d.lib`\")`n#`t`telse`n#`t`t`tpragma comment(lib, `\"$(ProjectName)64.lib`\")`n#`t`tendif`n#`telse`n#`t`tifdef _DEBUG`n#`t`t`tpragma comment(lib, `\"$(ProjectName)32d.lib`\")`n#`t`telse`n#`t`t`tpragma comment(lib, `\"$(ProjectName)32.lib`\")`n#`t`tendif`n#`tendif`n#endif`n\" } }; Set-Content -Path \"$(SolutionDir)Binary\Include\capstone\capstone.h\" -Value $content"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -176,6 +180,10 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(SolutionDir)capstone\include\capstone" "$(SolutionDir)Binary\Include\capstone" /I /Y /Q
+PowerShell -Command "$content = \"\"; foreach($line in Get-Content \"$(SolutionDir)capstone\include\capstone\capstone.h\") { $content += $line + \"`n\"; if ($line -match \"#define CAPSTONE_ENGINE_H\") { $content += \"`n#ifndef CAPSTONE_EXPORTS`n#`tifdef _WIN64`n#`t`tifdef _DEBUG`n#`t`t`tpragma comment(lib, `\"$(ProjectName)64d.lib`\")`n#`t`telse`n#`t`t`tpragma comment(lib, `\"$(ProjectName)64.lib`\")`n#`t`tendif`n#`telse`n#`t`tifdef _DEBUG`n#`t`t`tpragma comment(lib, `\"$(ProjectName)32d.lib`\")`n#`t`telse`n#`t`t`tpragma comment(lib, `\"$(ProjectName)32.lib`\")`n#`t`tendif`n#`tendif`n#endif`n\" } }; Set-Content -Path \"$(SolutionDir)Binary\Include\capstone\capstone.h\" -Value $content"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -193,6 +201,10 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <LargeAddressAware>true</LargeAddressAware>
     </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(SolutionDir)capstone\include\capstone" "$(SolutionDir)Binary\Include\capstone" /I /Y /Q
+PowerShell -Command "$content = \"\"; foreach($line in Get-Content \"$(SolutionDir)capstone\include\capstone\capstone.h\") { $content += $line + \"`n\"; if ($line -match \"#define CAPSTONE_ENGINE_H\") { $content += \"`n#ifndef CAPSTONE_EXPORTS`n#`tifdef _WIN64`n#`t`tifdef _DEBUG`n#`t`t`tpragma comment(lib, `\"$(ProjectName)64d.lib`\")`n#`t`telse`n#`t`t`tpragma comment(lib, `\"$(ProjectName)64.lib`\")`n#`t`tendif`n#`telse`n#`t`tifdef _DEBUG`n#`t`t`tpragma comment(lib, `\"$(ProjectName)32d.lib`\")`n#`t`telse`n#`t`t`tpragma comment(lib, `\"$(ProjectName)32.lib`\")`n#`t`tendif`n#`tendif`n#endif`n\" } }; Set-Content -Path \"$(SolutionDir)Binary\Include\capstone\capstone.h\" -Value $content"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -214,6 +226,10 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <LargeAddressAware>true</LargeAddressAware>
     </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(SolutionDir)capstone\include\capstone" "$(SolutionDir)Binary\Include\capstone" /I /Y /Q
+PowerShell -Command "$content = \"\"; foreach($line in Get-Content \"$(SolutionDir)capstone\include\capstone\capstone.h\") { $content += $line + \"`n\"; if ($line -match \"#define CAPSTONE_ENGINE_H\") { $content += \"`n#ifndef CAPSTONE_EXPORTS`n#`tifdef _WIN64`n#`t`tifdef _DEBUG`n#`t`t`tpragma comment(lib, `\"$(ProjectName)64d.lib`\")`n#`t`telse`n#`t`t`tpragma comment(lib, `\"$(ProjectName)64.lib`\")`n#`t`tendif`n#`telse`n#`t`tifdef _DEBUG`n#`t`t`tpragma comment(lib, `\"$(ProjectName)32d.lib`\")`n#`t`telse`n#`t`t`tpragma comment(lib, `\"$(ProjectName)32.lib`\")`n#`t`tendif`n#`tendif`n#endif`n\" } }; Set-Content -Path \"$(SolutionDir)Binary\Include\capstone\capstone.h\" -Value $content"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

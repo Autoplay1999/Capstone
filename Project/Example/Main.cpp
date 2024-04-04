@@ -19,8 +19,7 @@ struct platform {
 	cs_opt_value opt_value;
 };
 
-static void print_string_hex(const char* comment, unsigned char* str, size_t len)
-{
+static void print_string_hex(const char* comment, unsigned char* str, size_t len) {
 	unsigned char* c;
 
 	printf("%s", comment);
@@ -31,8 +30,7 @@ static void print_string_hex(const char* comment, unsigned char* str, size_t len
 	printf("\n");
 }
 
-static const char* get_eflag_name(uint64_t flag)
-{
+static const char* get_eflag_name(uint64_t flag) {
 	switch (flag) {
 	default:
 		return NULL;
@@ -131,8 +129,7 @@ static const char* get_eflag_name(uint64_t flag)
 	}
 }
 
-static const char* get_fpu_flag_name(uint64_t flag)
-{
+static const char* get_fpu_flag_name(uint64_t flag) {
 	switch (flag) {
 	default:
 		return NULL;
@@ -179,8 +176,7 @@ static const char* get_fpu_flag_name(uint64_t flag)
 	}
 }
 
-static void print_insn_detail(csh ud, cs_mode mode, cs_insn* ins)
-{
+static void print_insn_detail(csh ud, cs_mode mode, cs_insn* ins) {
 	int count, i;
 	cs_x86* x86;
 	cs_regs regs_read, regs_write;
@@ -369,34 +365,10 @@ static void print_insn_detail(csh ud, cs_mode mode, cs_insn* ins)
 	printf("\n");
 }
 
-static void test()
-{
-	//#define X86_CODE32 "\x01\xd8\x81\xc6\x34\x12\x00\x00\x05\x78\x56\x00\x00"
-	//#define X86_CODE32 "\x05\x78\x56\x00\x00"
-	//#define X86_CODE32 "\x01\xd8"
-	//#define X86_CODE32 "\x05\x23\x01\x00\x00"
-	//#define X86_CODE32 "\x8d\x87\x89\x67\x00\x00"
-	//#define X86_CODE32 "\xa1\x13\x48\x6d\x3a\x8b\x81\x23\x01\x00\x00\x8b\x84\x39\x23\x01\x00\x00"
-	//#define X86_CODE32 "\xb4\xc6"	// mov	ah, 0x6c
-	//#define X86_CODE32 "\x77\x04"	// ja +6
+static void test() {
 #define X86_CODE64 "\x55\x48\x8b\x05\xb8\x13\x00\x00\xe9\xea\xbe\xad\xde\xff\x25\x23\x01\x00\x00\xe8\xdf\xbe\xad\xde\x74\xff"
-//#define X86_CODE64 "\xe9\x79\xff\xff\xff"	// jmp 0xf7e
-
 #define X86_CODE16 "\x8d\x4c\x32\x08\x01\xd8\x81\xc6\x34\x12\x00\x00\x05\x23\x01\x00\x00\x36\x8b\x84\x91\x23\x01\x00\x00\x41\x8d\x84\x39\x89\x67\x00\x00\x8d\x87\x89\x67\x00\x00\xb4\xc6\x66\xe9\xb8\x00\x00\x00\x67\xff\xa0\x23\x01\x00\x00\x66\xe8\xcb\x00\x00\x00\x74\xfc"
 #define X86_CODE32 "\x8d\x4c\x32\x08\x01\xd8\x81\xc6\x34\x12\x00\x00\x05\x23\x01\x00\x00\x36\x8b\x84\x91\x23\x01\x00\x00\x41\x8d\x84\x39\x89\x67\x00\x00\x8d\x87\x89\x67\x00\x00\xb4\xc6\xe9\xea\xbe\xad\xde\xff\xa0\x23\x01\x00\x00\xe8\xdf\xbe\xad\xde\x74\xff"
-//#define X86_CODE32 "\x05\x23\x01\x00\x00\x0f\x01\xda"
-//#define X86_CODE32 "\x0f\xa7\xc0"	// xstorerng
-//#define X86_CODE32 "\x64\xa1\x18\x00\x00\x00"	// mov eax, dword ptr fs:[18]
-//#define X86_CODE32 "\x64\xa3\x00\x00\x00\x00"	// mov [fs:0x0], eax
-//#define X86_CODE32 "\xd1\xe1"	// shl ecx, 1
-//#define X86_CODE32 "\xd1\xc8"	// ror eax, 1
-//#define X86_CODE32 "\x83\xC0\x80"	// add	eax, -x80
-//#define X86_CODE32 "\xe8\x26\xfe\xff\xff"		// call	0xe2b
-//#define X86_CODE32 "\xcd\x80"		// int 0x80
-//#define X86_CODE32 "\x24\xb8"		// and    $0xb8,%al
-//#define X86_CODE32 "\xf0\x01\xd8"   // lock add eax,ebx
-//#define X86_CODE32 "\xf3\xaa"		// rep stosb
-//#define X86_CODE32 "\x81\xc6\x23\x01\x00\x00"
 
 	struct platform platforms[] = {
 		{
@@ -465,8 +437,7 @@ static void test()
 
 			// free memory allocated by cs_disasm()
 			cs_free(insn, count);
-		}
-		else {
+		} else {
 			printf("****************\n");
 			printf("Platform: %s\n", platforms[i].comment);
 			print_string_hex("Code:", platforms[i].code, platforms[i].size);
@@ -480,8 +451,7 @@ static void test()
 	}
 }
 
-int main()
-{
+int main() {
 	test();
 
 	return 0;

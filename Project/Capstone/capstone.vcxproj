@@ -21,13 +21,35 @@
   <ItemGroup>
     <ClCompile Include="..\..\capstone\arch\AArch64\AArch64BaseInfo.c" />
     <ClCompile Include="..\..\capstone\arch\AArch64\AArch64Disassembler.c" />
+    <ClCompile Include="..\..\capstone\arch\AArch64\AArch64DisassemblerExtension.c" />
     <ClCompile Include="..\..\capstone\arch\AArch64\AArch64InstPrinter.c" />
     <ClCompile Include="..\..\capstone\arch\AArch64\AArch64Mapping.c" />
     <ClCompile Include="..\..\capstone\arch\AArch64\AArch64Module.c" />
+    <ClCompile Include="..\..\capstone\arch\Alpha\AlphaDisassembler.c" />
+    <ClCompile Include="..\..\capstone\arch\Alpha\AlphaInstPrinter.c" />
+    <ClCompile Include="..\..\capstone\arch\Alpha\AlphaMapping.c" />
+    <ClCompile Include="..\..\capstone\arch\Alpha\AlphaModule.c" />
+    <ClCompile Include="..\..\capstone\arch\ARM\ARMBaseInfo.c" />
     <ClCompile Include="..\..\capstone\arch\ARM\ARMDisassembler.c" />
+    <ClCompile Include="..\..\capstone\arch\ARM\ARMDisassemblerExtension.c" />
     <ClCompile Include="..\..\capstone\arch\ARM\ARMInstPrinter.c" />
     <ClCompile Include="..\..\capstone\arch\ARM\ARMMapping.c" />
     <ClCompile Include="..\..\capstone\arch\ARM\ARMModule.c" />
+    <ClCompile Include="..\..\capstone\arch\BPF\BPFDisassembler.c" />
+    <ClCompile Include="..\..\capstone\arch\BPF\BPFInstPrinter.c" />
+    <ClCompile Include="..\..\capstone\arch\BPF\BPFMapping.c" />
+    <ClCompile Include="..\..\capstone\arch\BPF\BPFModule.c" />
+    <ClCompile Include="..\..\capstone\arch\EVM\EVMDisassembler.c" />
+    <ClCompile Include="..\..\capstone\arch\EVM\EVMInstPrinter.c" />
+    <ClCompile Include="..\..\capstone\arch\EVM\EVMMapping.c" />
+    <ClCompile Include="..\..\capstone\arch\EVM\EVMModule.c" />
+    <ClCompile Include="..\..\capstone\arch\HPPA\HPPADisassembler.c" />
+    <ClCompile Include="..\..\capstone\arch\HPPA\HPPAInstPrinter.c" />
+    <ClCompile Include="..\..\capstone\arch\HPPA\HPPAMapping.c" />
+    <ClCompile Include="..\..\capstone\arch\HPPA\HPPAModule.c" />
+    <ClCompile Include="..\..\capstone\arch\M680X\M680XDisassembler.c" />
+    <ClCompile Include="..\..\capstone\arch\M680X\M680XInstPrinter.c" />
+    <ClCompile Include="..\..\capstone\arch\M680X\M680XModule.c" />
     <ClCompile Include="..\..\capstone\arch\M68K\M68KDisassembler.c" />
     <ClCompile Include="..\..\capstone\arch\M68K\M68KInstPrinter.c" />
     <ClCompile Include="..\..\capstone\arch\M68K\M68KModule.c" />
@@ -35,10 +57,19 @@
     <ClCompile Include="..\..\capstone\arch\Mips\MipsInstPrinter.c" />
     <ClCompile Include="..\..\capstone\arch\Mips\MipsMapping.c" />
     <ClCompile Include="..\..\capstone\arch\Mips\MipsModule.c" />
+    <ClCompile Include="..\..\capstone\arch\MOS65XX\MOS65XXDisassembler.c" />
+    <ClCompile Include="..\..\capstone\arch\MOS65XX\MOS65XXModule.c" />
     <ClCompile Include="..\..\capstone\arch\PowerPC\PPCDisassembler.c" />
     <ClCompile Include="..\..\capstone\arch\PowerPC\PPCInstPrinter.c" />
     <ClCompile Include="..\..\capstone\arch\PowerPC\PPCMapping.c" />
     <ClCompile Include="..\..\capstone\arch\PowerPC\PPCModule.c" />
+    <ClCompile Include="..\..\capstone\arch\RISCV\RISCVDisassembler.c" />
+    <ClCompile Include="..\..\capstone\arch\RISCV\RISCVInstPrinter.c" />
+    <ClCompile Include="..\..\capstone\arch\RISCV\RISCVMapping.c" />
+    <ClCompile Include="..\..\capstone\arch\RISCV\RISCVModule.c" />
+    <ClCompile Include="..\..\capstone\arch\SH\SHDisassembler.c" />
+    <ClCompile Include="..\..\capstone\arch\SH\SHInstPrinter.c" />
+    <ClCompile Include="..\..\capstone\arch\SH\SHModule.c" />
     <ClCompile Include="..\..\capstone\arch\Sparc\SparcDisassembler.c" />
     <ClCompile Include="..\..\capstone\arch\Sparc\SparcInstPrinter.c" />
     <ClCompile Include="..\..\capstone\arch\Sparc\SparcMapping.c" />
@@ -48,9 +79,22 @@
     <ClCompile Include="..\..\capstone\arch\SystemZ\SystemZMapping.c" />
     <ClCompile Include="..\..\capstone\arch\SystemZ\SystemZMCTargetDesc.c" />
     <ClCompile Include="..\..\capstone\arch\SystemZ\SystemZModule.c" />
+    <ClCompile Include="..\..\capstone\arch\TMS320C64x\TMS320C64xDisassembler.c" />
+    <ClCompile Include="..\..\capstone\arch\TMS320C64x\TMS320C64xInstPrinter.c" />
+    <ClCompile Include="..\..\capstone\arch\TMS320C64x\TMS320C64xMapping.c" />
+    <ClCompile Include="..\..\capstone\arch\TMS320C64x\TMS320C64xModule.c" />
+    <ClCompile Include="..\..\capstone\arch\TriCore\TriCoreDisassembler.c" />
+    <ClCompile Include="..\..\capstone\arch\TriCore\TriCoreInstPrinter.c" />
+    <ClCompile Include="..\..\capstone\arch\TriCore\TriCoreMapping.c" />
+    <ClCompile Include="..\..\capstone\arch\TriCore\TriCoreModule.c" />
+    <ClCompile Include="..\..\capstone\arch\WASM\WASMDisassembler.c" />
+    <ClCompile Include="..\..\capstone\arch\WASM\WASMInstPrinter.c" />
+    <ClCompile Include="..\..\capstone\arch\WASM\WASMMapping.c" />
+    <ClCompile Include="..\..\capstone\arch\WASM\WASMModule.c" />
     <ClCompile Include="..\..\capstone\arch\X86\X86ATTInstPrinter.c" />
     <ClCompile Include="..\..\capstone\arch\X86\X86Disassembler.c" />
     <ClCompile Include="..\..\capstone\arch\X86\X86DisassemblerDecoder.c" />
+    <ClCompile Include="..\..\capstone\arch\X86\X86InstPrinterCommon.c" />
     <ClCompile Include="..\..\capstone\arch\X86\X86IntelInstPrinter.c" />
     <ClCompile Include="..\..\capstone\arch\X86\X86Mapping.c" />
     <ClCompile Include="..\..\capstone\arch\X86\X86Module.c" />
@@ -59,7 +103,9 @@
     <ClCompile Include="..\..\capstone\arch\XCore\XCoreMapping.c" />
     <ClCompile Include="..\..\capstone\arch\XCore\XCoreModule.c" />
     <ClCompile Include="..\..\capstone\cs.c" />
+    <ClCompile Include="..\..\capstone\Mapping.c" />
     <ClCompile Include="..\..\capstone\MCInst.c" />
+    <ClCompile Include="..\..\capstone\MCInstPrinter.c" />
     <ClCompile Include="..\..\capstone\MCInstrDesc.c" />
     <ClCompile Include="..\..\capstone\MCRegisterInfo.c" />
     <ClCompile Include="..\..\capstone\SStream.c" />
@@ -76,26 +122,26 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -144,13 +190,18 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
-      <SDLCheck>true</SDLCheck>
+      <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>CAPSTONE_EXPORTS;CAPSTONE_X86_ATT_DISABLE_NO;CAPSTONE_DIET_NO;CAPSTONE_X86_REDUCE_NO;CAPSTONE_HAS_ARM;CAPSTONE_HAS_ARM64;CAPSTONE_HAS_M68K;CAPSTONE_HAS_MIPS;CAPSTONE_HAS_POWERPC;CAPSTONE_HAS_SPARC;CAPSTONE_HAS_SYSZ;CAPSTONE_HAS_X86;CAPSTONE_HAS_XCORE;CAPSTONE_USE_SYS_DYN_MEM;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
-      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MultiProcessorCompilation>false</MultiProcessorCompilation>
       <AdditionalIncludeDirectories>$(SolutionDir)capstone\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <DiagnosticsFormat>Caret</DiagnosticsFormat>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <DisableSpecificWarnings>4996;4244;4018;4146;4133;4098;4267;4334</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -166,13 +217,18 @@ PowerShell -Command "$content = \"\"; foreach($line in Get-Content \"$(SolutionD
       <WarningLevel>Level3</WarningLevel>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <SDLCheck>true</SDLCheck>
+      <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>CAPSTONE_EXPORTS;CAPSTONE_X86_ATT_DISABLE_NO;CAPSTONE_DIET_NO;CAPSTONE_X86_REDUCE_NO;CAPSTONE_HAS_ARM;CAPSTONE_HAS_ARM64;CAPSTONE_HAS_M68K;CAPSTONE_HAS_MIPS;CAPSTONE_HAS_POWERPC;CAPSTONE_HAS_SPARC;CAPSTONE_HAS_SYSZ;CAPSTONE_HAS_X86;CAPSTONE_HAS_XCORE;CAPSTONE_USE_SYS_DYN_MEM;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
-      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MultiProcessorCompilation>false</MultiProcessorCompilation>
       <AdditionalIncludeDirectories>$(SolutionDir)capstone\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <DiagnosticsFormat>Caret</DiagnosticsFormat>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <DisableSpecificWarnings>4996;4244;4018;4146;4133;4098;4267;4334</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -188,13 +244,18 @@ PowerShell -Command "$content = \"\"; foreach($line in Get-Content \"$(SolutionD
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
-      <SDLCheck>true</SDLCheck>
+      <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>CAPSTONE_EXPORTS;CAPSTONE_X86_ATT_DISABLE_NO;CAPSTONE_DIET_NO;CAPSTONE_X86_REDUCE_NO;CAPSTONE_HAS_ARM;CAPSTONE_HAS_ARM64;CAPSTONE_HAS_M68K;CAPSTONE_HAS_MIPS;CAPSTONE_HAS_POWERPC;CAPSTONE_HAS_SPARC;CAPSTONE_HAS_SYSZ;CAPSTONE_HAS_X86;CAPSTONE_HAS_XCORE;CAPSTONE_USE_SYS_DYN_MEM;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
-      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MultiProcessorCompilation>false</MultiProcessorCompilation>
       <AdditionalIncludeDirectories>$(SolutionDir)capstone\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <DiagnosticsFormat>Caret</DiagnosticsFormat>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <DisableSpecificWarnings>4996;4244;4018;4146;4133;4098;4267;4334</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -211,13 +272,18 @@ PowerShell -Command "$content = \"\"; foreach($line in Get-Content \"$(SolutionD
       <WarningLevel>Level3</WarningLevel>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <SDLCheck>true</SDLCheck>
+      <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>CAPSTONE_EXPORTS;CAPSTONE_X86_ATT_DISABLE_NO;CAPSTONE_DIET_NO;CAPSTONE_X86_REDUCE_NO;CAPSTONE_HAS_ARM;CAPSTONE_HAS_ARM64;CAPSTONE_HAS_M68K;CAPSTONE_HAS_MIPS;CAPSTONE_HAS_POWERPC;CAPSTONE_HAS_SPARC;CAPSTONE_HAS_SYSZ;CAPSTONE_HAS_X86;CAPSTONE_HAS_XCORE;CAPSTONE_USE_SYS_DYN_MEM;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
-      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MultiProcessorCompilation>false</MultiProcessorCompilation>
       <AdditionalIncludeDirectories>$(SolutionDir)capstone\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <DiagnosticsFormat>Caret</DiagnosticsFormat>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <DisableSpecificWarnings>4996;4244;4018;4146;4133;4098;4267;4334</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

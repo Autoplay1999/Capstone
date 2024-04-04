@@ -40,6 +40,42 @@
     <Filter Include="Source Files\AArch64">
       <UniqueIdentifier>{c666fb9d-3d14-426e-9136-f6dc0ac899a7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Alpha">
+      <UniqueIdentifier>{73f7c266-4f09-410c-8323-9a409e48cfa8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\BPF">
+      <UniqueIdentifier>{37a6a39a-2439-4a59-aff0-592e291cdf87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine">
+      <UniqueIdentifier>{eea5b00d-978c-4fee-b5dc-1f61fd8e2307}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\EVM">
+      <UniqueIdentifier>{a1f378b3-7706-45bd-bb6f-acda4f5a18ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\HPPA">
+      <UniqueIdentifier>{c66d17b2-a491-4c81-8e9c-f73161044341}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\M680X">
+      <UniqueIdentifier>{37b92e41-2daf-436b-b5ec-4fe5d85985a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MOS65XX">
+      <UniqueIdentifier>{b2c41956-1867-40ae-bb40-d9adcd3d4d8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\RISCV">
+      <UniqueIdentifier>{d9b33a22-5899-4a05-b3c7-749135376e62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SH">
+      <UniqueIdentifier>{079d16e7-34e9-444b-b721-0cbdd104d00a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TMS320C64x">
+      <UniqueIdentifier>{c2971bfb-d780-4476-baab-f5b1b44d7f60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TriCore">
+      <UniqueIdentifier>{235652b3-5a53-4851-82d4-f7098d8acc56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\WASM">
+      <UniqueIdentifier>{dc9dd819-14f8-4634-a873-b54b252651a4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\capstone\arch\X86\X86ATTInstPrinter.c">
@@ -159,23 +195,161 @@
     <ClCompile Include="..\..\capstone\arch\AArch64\AArch64Module.c">
       <Filter>Source Files\AArch64</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\capstone\arch\AArch64\AArch64DisassemblerExtension.c">
+      <Filter>Source Files\AArch64</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\capstone\arch\Alpha\AlphaDisassembler.c">
+      <Filter>Source Files\Alpha</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\capstone\arch\Alpha\AlphaInstPrinter.c">
+      <Filter>Source Files\Alpha</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\capstone\arch\Alpha\AlphaMapping.c">
+      <Filter>Source Files\Alpha</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\capstone\arch\Alpha\AlphaModule.c">
+      <Filter>Source Files\Alpha</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\capstone\arch\ARM\ARMBaseInfo.c">
+      <Filter>Source Files\ARM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\capstone\arch\ARM\ARMDisassemblerExtension.c">
+      <Filter>Source Files\ARM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\capstone\arch\BPF\BPFDisassembler.c">
+      <Filter>Source Files\BPF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\capstone\arch\BPF\BPFInstPrinter.c">
+      <Filter>Source Files\BPF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\capstone\arch\BPF\BPFMapping.c">
+      <Filter>Source Files\BPF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\capstone\arch\BPF\BPFModule.c">
+      <Filter>Source Files\BPF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\capstone\Mapping.c">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\capstone\MCInstPrinter.c">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\capstone\cs.c">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Engine</Filter>
     </ClCompile>
     <ClCompile Include="..\..\capstone\MCInst.c">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Engine</Filter>
     </ClCompile>
     <ClCompile Include="..\..\capstone\MCInstrDesc.c">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Engine</Filter>
     </ClCompile>
     <ClCompile Include="..\..\capstone\MCRegisterInfo.c">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Engine</Filter>
     </ClCompile>
     <ClCompile Include="..\..\capstone\SStream.c">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Engine</Filter>
     </ClCompile>
     <ClCompile Include="..\..\capstone\utils.c">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\capstone\arch\EVM\EVMDisassembler.c">
+      <Filter>Source Files\EVM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\capstone\arch\EVM\EVMInstPrinter.c">
+      <Filter>Source Files\EVM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\capstone\arch\EVM\EVMMapping.c">
+      <Filter>Source Files\EVM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\capstone\arch\EVM\EVMModule.c">
+      <Filter>Source Files\EVM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\capstone\arch\HPPA\HPPADisassembler.c">
+      <Filter>Source Files\HPPA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\capstone\arch\HPPA\HPPAInstPrinter.c">
+      <Filter>Source Files\HPPA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\capstone\arch\HPPA\HPPAMapping.c">
+      <Filter>Source Files\HPPA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\capstone\arch\HPPA\HPPAModule.c">
+      <Filter>Source Files\HPPA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\capstone\arch\M680X\M680XDisassembler.c">
+      <Filter>Source Files\M680X</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\capstone\arch\M680X\M680XInstPrinter.c">
+      <Filter>Source Files\M680X</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\capstone\arch\M680X\M680XModule.c">
+      <Filter>Source Files\M680X</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\capstone\arch\MOS65XX\MOS65XXDisassembler.c">
+      <Filter>Source Files\MOS65XX</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\capstone\arch\MOS65XX\MOS65XXModule.c">
+      <Filter>Source Files\MOS65XX</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\capstone\arch\RISCV\RISCVDisassembler.c">
+      <Filter>Source Files\RISCV</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\capstone\arch\RISCV\RISCVInstPrinter.c">
+      <Filter>Source Files\RISCV</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\capstone\arch\RISCV\RISCVMapping.c">
+      <Filter>Source Files\RISCV</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\capstone\arch\RISCV\RISCVModule.c">
+      <Filter>Source Files\RISCV</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\capstone\arch\SH\SHDisassembler.c">
+      <Filter>Source Files\SH</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\capstone\arch\SH\SHInstPrinter.c">
+      <Filter>Source Files\SH</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\capstone\arch\SH\SHModule.c">
+      <Filter>Source Files\SH</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\capstone\arch\TMS320C64x\TMS320C64xDisassembler.c">
+      <Filter>Source Files\TMS320C64x</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\capstone\arch\TMS320C64x\TMS320C64xInstPrinter.c">
+      <Filter>Source Files\TMS320C64x</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\capstone\arch\TMS320C64x\TMS320C64xMapping.c">
+      <Filter>Source Files\TMS320C64x</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\capstone\arch\TMS320C64x\TMS320C64xModule.c">
+      <Filter>Source Files\TMS320C64x</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\capstone\arch\TriCore\TriCoreDisassembler.c">
+      <Filter>Source Files\TriCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\capstone\arch\TriCore\TriCoreInstPrinter.c">
+      <Filter>Source Files\TriCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\capstone\arch\TriCore\TriCoreMapping.c">
+      <Filter>Source Files\TriCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\capstone\arch\TriCore\TriCoreModule.c">
+      <Filter>Source Files\TriCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\capstone\arch\WASM\WASMDisassembler.c">
+      <Filter>Source Files\WASM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\capstone\arch\WASM\WASMInstPrinter.c">
+      <Filter>Source Files\WASM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\capstone\arch\WASM\WASMMapping.c">
+      <Filter>Source Files\WASM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\capstone\arch\WASM\WASMModule.c">
+      <Filter>Source Files\WASM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\capstone\arch\X86\X86InstPrinterCommon.c">
+      <Filter>Source Files\X86</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
